@@ -91,6 +91,8 @@ rounds (id, game_id, round_num, p1_card, p2_card, winner, was_war)
 
 ## Web app design
 
+![War Simulator](static/images/webappgif.gif)
+
 The Flask app (`app.py`) streams game results to the browser using **Server-Sent Events** (SSE). When you click Run, the browser opens an `EventSource` to `/stream?count=N`. The server runs games one at a time and yields a JSON event after each one — no polling required. The frontend updates the Chart.js line chart and stats panel incrementally as events arrive.
 
 For large runs (200+ games) the chart samples points rather than plotting every game, keeping rendering fast without losing the overall shape of the data.
