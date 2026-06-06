@@ -1,0 +1,15 @@
+[data-bs-theme="dark"] {
+  --bs-body-bg: #0d1117;
+  --bs-card-bg: #161b22;
+  --bs-border-color: #21262d;
+}
+
+.chart-wrap { position: relative; height: 340px; }
+.win-count { font-size: 2rem; font-weight: 700; line-height: 1; font-variant-numeric: tabular-nums; }
+.p1-color { color: #58a6ff; }
+.p2-color { color: #f78166; }
+.log-entries { overflow-y: auto; max-height: 260px; display: flex; flex-direction: column; gap: 3px; }
+.log-entry { display: flex; align-items: center; gap: 8px; padding: 4px 8px; border-radius: 4px; font-size: 0.75rem; background: var(--bs-body-bg); }
+.log-entry .gnum { color: #484f58; width: 28px; flex-shrink: 0; }
+.log-entry .lwinner { font-weight: 600; flex: 1; }
+.log-entry .lrounds { color: #484f58; }
